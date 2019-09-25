@@ -1,0 +1,154 @@
+
+$font-family: Arial, sans-serif !default;
+$font-size: 1.6rem !default;
+$font-size-mobile: 1.4rem !default;
+$font-color: #000 !default;
+$line-height: 1.4 !default;
+
+// colors
+$color-primary: #008fa5 !default;
+$color-primary-invert: #FFF !default;
+$color-secondary: #2a3c49 !default;
+$color-secondary-invert: #FFF !default;
+$color-success: hsl(141, 71%, 48%) !default;
+$color-success-invert: #FFF !default;
+$color-error: hsl(348, 100%, 61%) !default;
+$color-error-invert: #FFF !default;
+$black: hsl(0, 0%, 4%) !default;
+$black-bis: hsl(0, 0%, 7%) !default;
+$black-ter: hsl(0, 0%, 14%) !default;
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+// responsive
+$breakpoint-mobile: 500px !default;
+$breakpoint-tablet: 800px !default;
+$breakpoint-desktop: 1200px !default;
+$breakpoint-widescreen: 1600px !default;
+
+// navbar
+$navbar-background-color: #FFF !default;
+$navbar-item-padding: 15px !default;
+$navbar-dropdown-background-color: #FFF !default;
+$navbar-breakpoint: $breakpoint-tablet !default;
+$navbar-mobile-background: #FFF !default;
+$navbar-burger-background: $white-bis !default;
+$navbar-burger-color: $grey-dark !default;
+$navbar-burger-size: 52px !default;
+$navbar-burger-icon-size: 20px !default;
+
+// section
+$section-padding: 40px !default;
+$section-padding-mobile: 20px !default;
+$container-width: 1000px !default;
+
+// title
+$title-margin-top: 40px 40px 40px 40px 40px 40px !default;
+$title-margin-bottom: 20px 20px 20px 20px 20px 20px !default;
+$title-size: 4rem 3rem 2.5rem 2rem 1.8rem 1.6rem !default;
+$title-size-mobile: 3rem 2.5rem 2rem 1.8rem 1.6rem 1.4rem !default;
+$title-weight: bold bold bold bold bold bold !default;
+$title-color: $font-color $font-color $font-color $font-color $font-color $font-color !default;
+
+// grid
+$grid-gap: 30px !default;
+$grid-item-min-width: 250px !default;
+
+// content
+$paragraph-margin: 30px !default;
+$blockquote-size: 2rem !default;
+$blockquote-size-mobile: 1.6rem !default;
+$table-cell-padding: 6px 10px !default;
+$table-cell-border: 1px solid #000 !default;
+$ul-padding: 0 !default;
+$ol-padding: $ul-padding !default;
+$li-margin: 0 0 5px 0 !default;
+$dt-margin: 0 0 5px 0 !default;
+$dd-margin: 0 0 10px 0 !default;
+$link-color: $color-primary;
+
+// buttons
+$buttons-gap: 6px !default;
+$button-radius: 4px !default;
+$button-radius-large: 8px !default;
+$button-radius-small: 2px !default;
+$button-padding: 10px 20px !default;
+$button-padding-large: 15px 30px !default;
+$button-padding-small: 6px 15px !default;
+$button-font-size: 1.6rem !default;
+$button-font-size-large: 2rem !default;
+$button-font-size-small: 1.4rem !default;
+
+// loader
+$loader-color: $grey-dark !default;
+
+// close
+$close-background: rgba(0,0,0,.2) !default;
+$close-background-hover: rgba(0,0,0,.3) !default;
+$close-color: #FFF !default;
+$close-color-hover: #FFF !default;
+$close-size: 30px !default;
+$close-size-large: 50px !default;
+$close-size-small: 20px !default;
+
+// notifications
+$notification-background: $white-ter !default;
+$notification-radius: 4px !default;
+$notification-padding: 20px 30px !default;
+
+// breadcrumb
+$breadcrumb-padding: 0 10px !default;
+$breadcrumb-color: $black !default;
+$breadcrumb-color-hover: $color-primary !default;
+$breadcrumb-color-active: $grey-light !default;
+$breadcrumb-separator-color: $grey-lighter !default;
+$breadcrumb-separator-content: "\0002f" !default;
+
+// pagination
+$pagination-color: $black !default;
+$pagination-color-hover: $color-primary !default;
+$pagination-active-color: $color-primary-invert !default;
+$pagination-active-background: $color-primary !default;
+$pagination-link-margin: 0 4px !default;
+$pagination-link-padding: 4px !default;
+$pagination-link-radius: 4px !default;
+$pagination-ellipsis-color: $grey-light !default;
+
+// form
+$form-input-color: $font-color !default;
+$form-input-background: $white !default;
+$form-input-border: 1px solid $grey-light !default;
+$form-input-radius: 4px !default;
+$form-input-padding: 8px 12px !default;
+$form-input-fontsize: $font-size !default;
+$form-input-focus-border: 1px solid $color-primary !default;
+$form-input-focus-background: $white !default;
+$form-input-focus-color: $font-color !default;
+$form-input-disable-border: 1px solid $grey-light !default;
+$form-input-disable-background: $white-ter !default;
+$form-input-disable-color: $grey-dark !default;
+$form-input-placeholder-color: $grey-light !default;
+
+$form-select-arrow-size: .6em !default;
+$form-select-arrow-thickness: 2px !default;
+$form-select-arrow-color: $color-primary !default;
+
+$form-label-color: $font-color !default;
+$form-label-size: $font-size !default;
+$form-label-weight: bold !default;
+$form-label-margin: 0 0 5px 0 !default;
+
+$form-line-margin: 0 0 15px 0 !default;
+
+$form-field-padding: 0 10px !default;
+
+$form-help-size: 1.4rem !default;
+$form-help-color: $grey !default;
+$form-help-style: italic !default;
+$form-help-margin: 5px 0 0 0 !default;

@@ -1,0 +1,22 @@
+{
+  "name": "zaidan",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ikuzo",
+    "url": "https://ikuzo.fr"
+  },
+  "description": "Small CSS framework",
+  "main": "zaidan.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ikuzostudio/zaidan.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ]
+}

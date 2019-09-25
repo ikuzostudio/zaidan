@@ -1,0 +1,97 @@
+
+.buttons {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .button {
+        margin-bottom: $buttons-gap;
+
+        &:not(:last-child) {
+            margin-right: $buttons-gap;
+        }
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding: $button-padding;
+    border: none;
+    border-radius: $button-radius;
+    font-size: $button-font-size;
+    cursor: pointer;
+    background-color: $white-ter;
+
+    &[disabled] {
+        opacity: .5;
+        cursor: not-allowed;
+    }
+
+    &.is-loading {
+        color: transparent !important;
+
+        &:after {
+            @extend %loader;
+            position: absolute;
+            left: calc(50% - (1em / 2));
+            top: calc(50% - (1em / 2));
+        }
+    }
+
+    &.is-large {
+        border-radius: $button-radius-large;
+        font-size: $button-font-size-large;
+        padding: $button-padding-large;
+    }
+    &.is-small {
+        border-radius: $button-radius-small;
+        font-size: $button-font-size-small;
+        padding: $button-padding-small;
+    }
+
+    &.is-rounded {
+        border-radius: 100px;
+    }
+
+    &.is-primary {
+        background-color: $color-primary;
+        color: $color-primary-invert;
+        &:after {
+            border-color: $color-primary-invert;
+        }
+    }
+    &.is-secondary {
+        background-color: $color-secondary;
+        color: $color-secondary-invert;
+        &:after {
+            border-color: $color-secondary-invert;
+        }
+    }
+    &.is-success {
+        background-color: $color-success;
+        color: $color-success-invert;
+        &:after {
+            border-color: $color-success-invert;
+        }
+    }
+    &.is-error {
+        background-color: $color-error;
+        color: $color-error-invert;
+        &:after {
+            border-color: $color-error-invert;
+        }
+    }
+    &.is-white {
+        background-color: $white;
+    }
+    &.is-dark {
+        background-color: $grey-darker;
+        color: #FFF;
+        &:after {
+            border-color: #FFF;
+        }
+    }
+}

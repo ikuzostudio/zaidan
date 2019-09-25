@@ -1,0 +1,13 @@
+
+.section {
+    padding: $section-padding;
+
+    @include mobile {
+        padding: $section-padding-mobile;
+    }
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+}

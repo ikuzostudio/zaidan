@@ -1,0 +1,51 @@
+
+.notification {
+    position: relative;
+    padding: $notification-padding;
+    background-color: $notification-background;
+    border-radius: $notification-radius;
+
+    > .close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    &.is-success {
+        background-color: $color-success;
+        color: $color-success-invert;
+    }
+    &.is-error {
+        background-color: $color-error;
+        color: $color-error-invert;
+    }
+    &.is-primary {
+        background-color: $color-primary;
+        color: $color-primary-invert;
+    }
+    &.is-secondary {
+        background-color: $color-secondary;
+        color: $color-secondary-invert;
+    }
+
+    &.is-flash {
+        position: fixed;
+        width: 80%;
+        max-width: 400px;
+        text-align: center;
+        z-index: 9000;
+        bottom: 30px;
+        left: 50%;
+        visibility: hidden;
+        opacity: 0;
+        transform: translate(-50%, 0) scale(.9);
+        transition: opacity .1s linear, transform .1s cubic-bezier(0.39, 0.575, 0.565, 1), visibility 0s linear .1s;
+
+        &.is-showed {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, 0);
+            transition: opacity .1s linear, transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+    }
+}

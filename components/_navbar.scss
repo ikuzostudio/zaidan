@@ -1,0 +1,136 @@
+
+.navbar {
+    display: flex;
+    background-color: $navbar-background-color;
+
+    &.is-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5500;
+    }
+
+    &-start, &-end {
+        display: flex;
+        align-items: center;
+    }
+
+    &-menu {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    &-burger {
+        display: none;
+    }
+
+    &-link, &-item {
+        display: inline-block;
+        padding: $navbar-item-padding;
+    }
+
+    &-item {
+        &.has-dropdown {
+            position: relative;
+        }
+    }
+
+    &-dropdown {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        white-space: nowrap;
+        background-color: $navbar-dropdown-background-color;
+
+        &.is-active, .navbar-item.has-dropdown.is-hoverable:hover & {
+            visibility: visible;
+        }
+    }
+
+    @media (max-width: $navbar-breakpoint) {
+        &-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: $navbar-mobile-background;
+            visibility: hidden;
+            z-index: 6500;
+
+            &.is-active {
+                visibility: visible;
+            }
+
+            &.has-default-animation {
+                transform: translate(-100%, 0);
+                transition: transform .2s ease-in-out, visibility 0s linear .2s;
+
+                &.is-active {
+                    transform: none;
+                    transition: transform .3s ease;
+                }
+            }
+        }
+
+        &-burger {
+            $icon-margin: $navbar-burger-icon-size / 4;
+
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+            width: $navbar-burger-size;
+            height: $navbar-burger-size;
+            color: $navbar-burger-color;
+            background-color: $navbar-burger-background;
+            border: none;
+            z-index: 6600;
+
+            span {
+                width: $navbar-burger-icon-size;
+                height: 1px;
+                background-color: currentColor;
+
+                &:not(:last-child) {
+                    margin-bottom: $icon-margin;
+                }
+            }
+
+            &.has-default-animation {
+                span {
+                    transition: transform .2s ease;
+                    transform-origin: center;
+                }
+
+                &.is-active {
+                    span {
+                        &:nth-child(1) {
+                            transform: translate(0, $icon-margin + 1px) rotate(45deg);
+                        }
+                        &:nth-child(2) {
+                            transform: scaleX(0);
+                        }
+                        &:nth-child(3) {
+                            transform: translate(0, -$icon-margin - 1px) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        &-dropdown {
+            display: none;
+        }
+    }
+}

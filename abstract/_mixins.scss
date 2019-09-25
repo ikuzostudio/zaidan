@@ -1,0 +1,90 @@
+
+// responsive
+
+@mixin mobile {
+    @media(max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(min-width: $breakpoint-mobile + 1px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: $breakpoint-tablet + 1px) {
+        @content;
+    }
+}
+
+@mixin widescreen {
+    @media(min-width: $breakpoint-desktop + 1px) {
+        @content;
+    }
+}
+
+// utils
+
+@mixin grid($gap, $min-width) {
+    display: grid;
+    grid-gap: $gap;
+    grid-template-columns: repeat(auto-fill, minmax($min-width, 1fr));
+}
+
+@mixin grid-cols($cols-mobile: 1, $cols-tablet: 2, $cols-desktop: 3, $cols-widescreen: 4) {
+    display: grid;
+    grid-template-columns: repeat($cols-mobile, 1fr);
+
+    @include tablet {
+        grid-template-columns: repeat($cols-tablet, 1fr);
+    }
+    @include desktop {
+        grid-template-columns: repeat($cols-desktop, 1fr);
+    }
+    @include widescreen {
+        grid-template-columns: repeat($cols-widescreen, 1fr);
+    }
+}
+
+@mixin chevron($direction, $size, $color: currentcolor, $thickness: 1px) {
+    $transform: rotate(45deg);
+    @if $direction == 'right' {
+        $transform: translate(-$size / 2, -$size / 2) rotate(-45deg);
+    } @else if $direction == 'bottom' {
+        $transform: translate(-$size / 2, -$size * 3 / 4) rotate(45deg);
+    } @else if $direction == 'left' {
+        $transform: translate(-$size / 2, -$size / 2) rotate(135deg);
+    } @else {
+        $transform: translate(-$size / 2, -$size / 4) rotate(-135deg);
+    }
+
+    content: '';
+    display: inline-block;
+    width: $size;
+    height: $size;
+    border-bottom: $thickness solid $color;
+    border-right: $thickness solid $color;
+    transform: $transform;
+}
+
+@mixin triangle($direction, $size, $thickness, $color: currentColor) {
+    content: '';
+    display: inline-block;
+    border: $thickness solid transparent;
+
+    @if $direction == 'right' {
+        border-left: $size solid $color;
+        border-right: none;
+    } @else if $direction == 'bottom' {
+        border-top: $size solid $color;
+        border-bottom: none;
+    } @else if $direction == 'left' {
+        border-right: $size solid $color;
+        border-left: none;
+    } @else {
+        border-bottom: $size solid $color;
+        border-top: none;
+    }
+}

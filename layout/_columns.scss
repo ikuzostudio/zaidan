@@ -1,0 +1,20 @@
+
+.columns {
+    display: flex;
+
+    @include mobile {
+        &:not(.is-mobile) {
+            flex-direction: column;
+        }
+    }
+}
+
+.column {
+    flex: 1;
+
+    @for $i from 1 through 10 {
+        &.is-flex-#{$i} {
+            flex: $i;
+        }
+    }
+}

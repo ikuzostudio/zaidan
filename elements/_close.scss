@@ -1,0 +1,49 @@
+
+.close {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: $close-background;
+    border: none;
+    border-radius: 290486px;
+    cursor: pointer;
+    pointer-events: auto;
+    display: inline-block;
+    height: $close-size;
+    width: $close-size;
+    outline: 0;
+    position: relative;
+    color: $close-color;
+
+    &:hover {
+        background-color: $close-background-hover;
+        color: $close-color-hover;
+    }
+
+    &.is-small {
+        width: $close-size-small;
+        height: $close-size-small;
+    }
+    &.is-large {
+        width: $close-size-large;
+        height: $close-size-large;
+    }
+
+    &:before, &:after {
+        content: "";
+        display: block;
+        background-color: currentColor;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        transform-origin: center center;
+    }
+    &:before {
+        height: 2px;
+        width: 50%;
+    }
+    &:after {
+        height: 50%;
+        width: 2px;
+    }
+}

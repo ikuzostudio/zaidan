@@ -1,0 +1,63 @@
+
+.breadcrumb {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+            a {
+                padding-left: 0;
+            }
+        }
+
+        + li {
+            &:before {
+                color: $breadcrumb-separator-color;
+                content: $breadcrumb-separator-content;
+            }
+        }
+
+        &.is-active {
+            a {
+                color: $breadcrumb-color-active;
+                cursor: default;
+                pointer-events: none;
+            }
+        }
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $breadcrumb-padding;
+        color: $breadcrumb-color;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: $breadcrumb-color-hover;
+        }
+
+        .icon:first-child {
+            margin-right: 5px;
+        }
+    }
+
+    &.is-centered {
+        ul {
+            justify-content: center;
+        }
+    }
+    &.is-right {
+        ul {
+            justify-content: flex-end;
+        }
+    }
+}
