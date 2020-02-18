@@ -25,6 +25,12 @@
     }
 }
 
+@mixin fullhd {
+    @media(min-width: $breakpoint-widescreen + 1px) {
+        @content;
+    }
+}
+
 // utils
 
 @mixin grid($gap, $min-width) {
