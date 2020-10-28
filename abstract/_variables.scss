@@ -45,12 +45,12 @@ $navbar-burger-icon-size: 20px !default;
 
 // section
 $section-padding: 40px !default;
-$section-padding-mobile: 20px !default;
+$section-padding-mobile: 30px !default;
 $container-width: 1000px !default;
 
 // title
-$title-margin-top: 40px 40px 40px 40px 40px 40px !default;
-$title-margin-bottom: 20px 20px 20px 20px 20px 20px !default;
+$title-margin-top: 2em 2em 2em 2em 2em 2em !default;
+$title-margin-bottom: 1em 1em 1em 1em 1em 1em !default;
 $title-size: 4rem 3rem 2.5rem 2rem 1.8rem 1.6rem !default;
 $title-size-mobile: 3rem 2.5rem 2rem 1.8rem 1.6rem 1.4rem !default;
 $title-weight: bold bold bold bold bold bold !default;
@@ -61,16 +61,16 @@ $grid-gap: 30px !default;
 $grid-item-min-width: 250px !default;
 
 // content
-$paragraph-margin: 30px !default;
+$paragraph-margin: 1.5em !default;
 $blockquote-size: 2rem !default;
 $blockquote-size-mobile: 1.6rem !default;
-$table-cell-padding: 6px 10px !default;
+$table-cell-padding: .3em 1em !default;
 $table-cell-border: 1px solid #000 !default;
 $ul-padding: 0 !default;
 $ol-padding: $ul-padding !default;
-$li-margin: 0 0 5px 0 !default;
-$dt-margin: 0 0 5px 0 !default;
-$dd-margin: 0 0 10px 0 !default;
+$li-margin: 0 0 .3em 0 !default;
+$dt-margin: 0 0 .3em 0 !default;
+$dd-margin: 0 0 .6em 0 !default;
 $link-color: $color-primary;
 
 // buttons
@@ -78,12 +78,15 @@ $buttons-gap: 6px !default;
 $button-radius: 4px !default;
 $button-radius-large: 8px !default;
 $button-radius-small: 2px !default;
-$button-padding: 10px 20px !default;
-$button-padding-large: 15px 30px !default;
-$button-padding-small: 6px 15px !default;
+$button-padding: 0 1.5em !default;
+$button-padding-large: 0 2em !default;
+$button-padding-small: 0 1em !default;
 $button-font-size: 1.6rem !default;
 $button-font-size-large: 2rem !default;
 $button-font-size-small: 1.4rem !default;
+$button-height: 50px !default;
+$button-height-large: 60px !default;
+$button-height-small: 40px !default;
 
 // loader
 $loader-color: $grey-dark !default;
