@@ -1,0 +1,39 @@
+.is-hidden-mobile {
+  display: none;
+}
+
+@include tablet {
+  .is-hidden-tablet {
+    display: none;
+  }
+  .is-showed-tablet {
+    display: block;
+  }
+}
+
+@include desktop {
+  .is-hidden-desktop {
+    display: none;
+  }
+  .is-showed-desktop {
+    display: block;
+  }
+}
+
+@include widescreen {
+  .is-hidden-widescreen {
+    display: none;
+  }
+  .is-showed-widescreen {
+    display: block;
+  }
+}
+
+@include fullhd {
+  .is-hidden-fullhd {
+    display: none;
+  }
+  .is-showed-fullhd {
+    display: block;
+  }
+}
