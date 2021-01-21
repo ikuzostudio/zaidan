@@ -1,0 +1,14 @@
+
+.image-ratio {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-bottom: var(--ratio);
+  }
+
+  img {
+    @extend %imageCover;
+  }
+}
