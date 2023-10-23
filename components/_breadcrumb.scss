@@ -19,14 +19,14 @@
 
         + li {
             &:before {
-                color: $breadcrumb-separator-color;
-                content: $breadcrumb-separator-content;
+                color: var(--breadcrumb-separator-color);
+                content: var(--breadcrumb-separator-content);
             }
         }
 
         &.is-active {
             a {
-                color: $breadcrumb-color-active;
+                color: var(--breadcrumb-color-active);
                 cursor: default;
                 pointer-events: none;
             }
@@ -37,12 +37,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: $breadcrumb-padding;
-        color: $breadcrumb-color;
+        padding: var(--breadcrumb-padding);
+        color: var(--breadcrumb-color);
         transition: color .2s ease-in-out;
 
         &:hover {
-            color: $breadcrumb-color-hover;
+            color: var(--breadcrumb-color-hover);
         }
 
         .icon:first-child {

@@ -1,9 +1,9 @@
 
 .notification {
     position: relative;
-    padding: $notification-padding;
-    background-color: $notification-background;
-    border-radius: $notification-radius;
+    padding: var(--notification-padding);
+    background-color: var(--notification-background);
+    border-radius: var(--notification-radius);
 
     > .close {
         position: absolute;
@@ -12,20 +12,20 @@
     }
 
     &.is-success {
-        background-color: $color-success;
-        color: $color-success-invert;
+        background-color: var(--color-success);
+        color: var(--color-success-invert);
     }
     &.is-error {
-        background-color: $color-error;
-        color: $color-error-invert;
+        background-color: var(--color-error);
+        color: var(--color-error-invert);
     }
     &.is-primary {
-        background-color: $color-primary;
-        color: $color-primary-invert;
+        background-color: var(--color-primary);
+        color: var(--color-primary-invert);
     }
     &.is-secondary {
-        background-color: $color-secondary;
-        color: $color-secondary-invert;
+        background-color: var(--color-secondary);
+        color: var(--color-secondary-invert);
     }
 
     &.is-flash {

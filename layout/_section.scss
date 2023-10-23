@@ -1,13 +1,13 @@
 
 .section {
-    padding: $section-padding;
+    padding: var(--section-padding);
 
     @include mobile {
-        padding: $section-padding-mobile;
+        padding: var(--section-padding-mobile);
     }
 }
 
 .container {
-    max-width: $container-width;
+    max-width: var(--container-width);
     margin: 0 auto;
 }

@@ -25,26 +25,26 @@
     }
 
     &-ellipsis {
-        margin: $pagination-link-margin;
-        padding: $pagination-link-padding;
-        color: $pagination-ellipsis-color;
+        margin: var(--pagination-link-margin);
+        padding: var(--pagination-link-padding);
+        color: var(--pagination-ellipsis-color);
     }
 
     &-link {
         display: inline-block;
-        margin: $pagination-link-margin;
-        padding: $pagination-link-padding;
-        border-radius: $pagination-link-radius;
+        margin: var(--pagination-link-margin);
+        padding: var(--pagination-link-padding);
+        border-radius: var(--pagination-link-radius);
         text-align: center;
         min-width: 2em;
 
         &:hover {
-            color: $pagination-color-hover;
+            color: var(--pagination-color-hover);
         }
 
         &.is-current {
-            color: $pagination-active-color;
-            background-color: $pagination-active-background;
+            color: var(--pagination-active-color);
+            background-color: var(--pagination-active-background);
         }
     }
 }

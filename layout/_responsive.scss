@@ -1,39 +1,51 @@
 .is-hidden-mobile {
-  display: none;
+  display: none !important;
 }
 
 @include tablet {
   .is-hidden-tablet {
-    display: none;
+    display: none !important;
   }
   .is-showed-tablet {
-    display: block;
+    display: block !important;
+  }
+  .is-showed-flex-tablet {
+    display: flex !important;
   }
 }
 
 @include desktop {
   .is-hidden-desktop {
-    display: none;
+    display: none !important;
   }
   .is-showed-desktop {
-    display: block;
+    display: block !important;
+  }
+  .is-showed-flex-desktop {
+    display: flex !important;
   }
 }
 
 @include widescreen {
   .is-hidden-widescreen {
-    display: none;
+    display: none !important;
   }
   .is-showed-widescreen {
-    display: block;
+    display: block !important;
+  }
+  .is-showed-flex-widescreen {
+    display: flex !important;
   }
 }
 
 @include fullhd {
   .is-hidden-fullhd {
-    display: none;
+    display: none !important;
   }
   .is-showed-fullhd {
-    display: block;
+    display: block !important;
+  }
+  .is-showed-flex-fullhd {
+    display: flex !important;
   }
 }

@@ -1,19 +1,19 @@
 
 .has-text-center {
-    text-align: center;
+    text-align: center !important;
 }
 .has-text-right {
-    text-align: right;
+    text-align: right !important;
 }
 .has-text-left {
-    text-align: left;
+    text-align: left !important;
 }
 .has-text-justify {
-    text-align: justify;
+    text-align: justify !important;
 }
 .has-text-primary {
-    color: $color-primary;
+    color: var(--color-primary) !important;
 }
 .has-text-secondary {
-    color: $color-secondary;
+    color: var(--color-secondary) !important;
 }

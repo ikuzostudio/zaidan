@@ -2,52 +2,51 @@
 .content {
     p, ul, ol, blockquote, dl, pre, table, figure {
         &:not(:last-child) {
-            margin-bottom: $paragraph-margin;
+            margin-bottom: var(--paragraph-margin);
         }
     }
 
     a {
-        color: $link-color;
-        text-decoration: underline;
+        color: var(--link-color);
     }
 
     blockquote {
-        font-size: $blockquote-size;
+        font-size: var(--blockquote-size);
     }
 
     table {
         width: 100%;
 
         td, th {
-            padding: $table-cell-padding;
-            border: $table-cell-border;
+            padding: var(--table-cell-padding);
+            border: var(--table-cell-border);
         }
     }
 
     ul {
         list-style-type: disc;
         list-style-position: inside;
-        padding: $ul-padding;
+        padding: var(--ul-padding);
     }
     ol {
-        padding: $ol-padding;
+        padding: var(--ol-padding);
         list-style-position: inside;
     }
     li {
-        margin: $li-margin;
+        margin: var(--li-margin);
     }
 
     dt {
-        margin: $dt-margin;
+        margin: var(--dt-margin);
         font-weight: bold;
     }
     dd {
-        margin: $dd-margin;
+        margin: var(--dd-margin);
         font-style: italic;
     }
 
     pre {
-        background-color: $grey-darker;
+        background-color: var(--grey-darker);
         color: #FFF;
         font-family: monospace, sans-serif;
         padding: 20px;
@@ -80,7 +79,7 @@
 
     @include mobile {
         blockquote {
-            font-size: $blockquote-size-mobile;
+            font-size: var(--blockquote-size-mobile);
         }
     }
 }

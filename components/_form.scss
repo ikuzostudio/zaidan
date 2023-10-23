@@ -3,12 +3,12 @@
     &-line {
         display: flex;
         align-items: flex-start;
-        padding: $form-line-margin;
+        padding: var(--form-line-margin);
     }
 
     &-field {
         flex: 1;
-        margin: $form-field-padding;
+        margin: var(--form-field-padding);
 
         &:first-child {
             margin-left: 0;
@@ -26,14 +26,14 @@
 
         &.is-error {
             .form-control {
-                border: 1px solid $color-error;
+                border: 1px solid var(--color-error);
             }
         }
         &.is-required {
             .form-label, .form-checkbox > span {
                 &:after {
                     content: '*';
-                    color: $color-error;
+                    color: var(--color-error);
                     display: inline-block;
                     margin-left: 4px;
                 }
@@ -45,7 +45,7 @@
         position: relative;
 
         &::before {
-            @include chevron('bottom', $form-select-arrow-size, $form-select-arrow-color, $form-select-arrow-thickness);
+            @include chevron('bottom', var(--form-select-arrow-size), var(--form-select-arrow-color), var(--form-select-arrow-thickness));
             position: absolute;
             top: 50%;
             right: 10px;
@@ -60,45 +60,45 @@
 
     &-input, &-select select {
         width: 100%;
-        padding: $form-input-padding;
-        color: $form-input-color;
-        background-color: $form-input-background;
-        border: $form-input-border;
-        border-radius: $form-input-radius;
-        font-size: $form-input-fontsize;
-        font-family: $font-family;
+        padding: var(--form-input-padding);
+        color: var(--form-input-color);
+        background-color: var(--form-input-background);
+        border: var(--form-input-border);
+        border-radius: var(--form-input-radius);
+        font-size: var(--form-input-fontsize);
+        font-family: var(--font-family);
 
         &:focus {
-            border: $form-input-focus-border;
-            background-color: $form-input-focus-background;
-            color: $form-input-focus-color;
+            border: var(--form-input-focus-border);
+            background-color: var(--form-input-focus-background);
+            color: var(--form-input-focus-color);
             outline: none;
         }
 
         &[disabled] {
-            border: $form-input-disable-border;
-            background-color: $form-input-disable-background;
-            color: $form-input-disable-color;
+            border: var(--form-input-disable-border);
+            background-color: var(--form-input-disable-background);
+            color: var(--form-input-disable-color);
         }
 
         &::placeholder {
-            color: $form-input-placeholder-color;
+            color: var(--form-input-placeholder-color);
         }
     }
 
     &-label {
         display: block;
-        font-size: $form-label-size;
-        font-weight: $form-label-weight;
-        color: $form-label-color;
-        margin: $form-label-margin;
+        font-size: var(--form-label-size);
+        font-weight: var(--form-label-weight);
+        color: var(--form-label-color);
+        margin: var(--form-label-margin);
     }
 
     &-help {
-        margin: $form-help-margin;
-        font-size: $form-help-size;
-        font-style: $form-help-style;
-        color: $form-help-color;
+        margin: var(--form-help-margin);
+        font-size: var(--form-help-size);
+        font-style: var(--form-help-style);
+        color: var(--form-help-color);
     }
 
     &-checkbox {

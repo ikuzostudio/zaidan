@@ -2,30 +2,30 @@
 .close {
     -moz-appearance: none;
     -webkit-appearance: none;
-    background-color: $close-background;
+    background-color: var(--close-background);
     border: none;
     border-radius: 290486px;
     cursor: pointer;
     pointer-events: auto;
     display: inline-block;
-    height: $close-size;
-    width: $close-size;
+    height: var(--close-size);
+    width: var(--close-size);
     outline: 0;
     position: relative;
-    color: $close-color;
+    color: var(--close-color);
 
     &:hover {
-        background-color: $close-background-hover;
-        color: $close-color-hover;
+        background-color: var(--close-background-hover);
+        color: var(--close-color-hover);
     }
 
     &.is-small {
-        width: $close-size-small;
-        height: $close-size-small;
+        width: var(--close-size-small);
+        height: var(--close-size-small);
     }
     &.is-large {
-        width: $close-size-large;
-        height: $close-size-large;
+        width: var(--close-size-large);
+        height: var(--close-size-large);
     }
 
     &:before, &:after {
