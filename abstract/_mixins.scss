@@ -57,13 +57,13 @@
 @mixin chevron($direction, $size, $color: currentcolor, $thickness: 1px) {
     $transform: rotate(45deg);
     @if $direction == 'right' {
-        $transform: translate(-$size / 2, -$size / 2) rotate(-45deg);
+        $transform: translate(-50%, -50%) rotate(-45deg);
     } @else if $direction == 'bottom' {
-        $transform: translate(-$size / 2, -$size * 3 / 4) rotate(45deg);
+        $transform: translate(-50%, -75%) rotate(45deg);
     } @else if $direction == 'left' {
-        $transform: translate(-$size / 2, -$size / 2) rotate(135deg);
+        $transform: translate(-50%, -50%) rotate(135deg);
     } @else {
-        $transform: translate(-$size / 2, -$size / 4) rotate(-135deg);
+        $transform: translate(-50%, -25%) rotate(-135deg);
     }
 
     content: '';
