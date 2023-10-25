@@ -6,7 +6,7 @@
         }
     }
 
-    a {
+    a:not([class]) {
         color: var(--link-color);
     }
 
